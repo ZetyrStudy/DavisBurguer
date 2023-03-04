@@ -1,7 +1,7 @@
-.hearderCardapio {
+.hearderMenu {
   display: flex;
   justify-content: center;
-
+  font-family: 'Inter', sans-serif;
   .imgCardapio{
     margin-top: 10px;
     height: 80px;
@@ -18,4 +18,37 @@
     }
   }
 
+}
+
+.containerOrder{
+  
+  h3{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #D97904;
+    font-family: 'Inter', sans-serif;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+
+    ion-buttons{
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      justify-content: center;
+      text-align: center;
+      background: #BF0404;
+      height: 40px;
+      width: 200px;
+      border-radius: 20%;
+      color: #f5eeee;
+      
+    }
+  }
+
+  
 }

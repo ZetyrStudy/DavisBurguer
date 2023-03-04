@@ -8,13 +8,15 @@ import { CardapioPageRoutingModule } from './cardapio-routing.module';
 
 import { CardapioPage } from './cardapio.page';
 import { HeaderComponent } from 'src/app/components/header/header.component';
+import { SharedModule } from 'src/app/components/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CardapioPageRoutingModule
+    CardapioPageRoutingModule,
+    SharedModule
   ],
   declarations: [CardapioPage]
 })

@@ -26,4 +26,15 @@ ion-header{
         border-radius: 50%;
         margin-right: 10px;
     }  
+
+    #name {
+        color: #F29F05;
+    }
+  }
+
+  ion-content{
+    ion-item{
+        --color: #BF0404;
+        --font-weight: bold;
+    }
   }

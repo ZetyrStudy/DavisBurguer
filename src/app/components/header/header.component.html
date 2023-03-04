@@ -3,18 +3,36 @@
 <ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
+      <ion-title slot="start" id="name">DAVI'S BURGUER</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label routerLink="/cardapio" >Cardapio</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/sadastro" >Cadastro</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/cupoens" >Cupõens</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/sobre-nos" >sobre</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>login</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
 </ion-menu>
 
 <ion-header  id="main-content">
   <ion-toolbar id="header">
     <ion-buttons slot="start">
-      <img slot="end" id="logo" src="../../../assets/icon/logo.png" routerLink="/profile">
+      <img slot="end" id="logo" src="../../../assets/icon/logo.png" routerLink="/home">
     </ion-buttons>
-
+    <!-- <ion-searchbar animated="true" placeholder="Animated"></ion-searchbar> -->
     <ion-buttons slot="end" class="menu_btn">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>

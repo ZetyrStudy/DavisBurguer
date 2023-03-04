@@ -14,7 +14,23 @@ const routes: Routes = [
   {
     path: 'cardapio',
     loadChildren: () => import('./pages/cardapio/cardapio.module').then( m => m.CardapioPageModule)
+  },  {
+    path: 'cadastro',
+    loadChildren: () => import('./pages/cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
+  {
+    path: 'sobre-nos',
+    loadChildren: () => import('./pages/sobre-nos/sobre-nos.module').then( m => m.SobreNosPageModule)
+  },
+  {
+    path: 'info-protudos',
+    loadChildren: () => import('./pages/info-protudos/info-protudos.module').then( m => m.InfoProtudosPageModule)
+  },
+  {
+    path: 'cupoens',
+    loadChildren: () => import('./pages/cupoens/cupoens.module').then( m => m.CupoensPageModule)
+  },
+
 ];
 
 @NgModule({

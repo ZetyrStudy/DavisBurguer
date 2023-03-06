@@ -2,6 +2,7 @@ import { ParallaxDirective } from 'src/app/directives/parallax.directive';
 import { HideHeaderDirective } from 'src/app/directives/hide-header.directive';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Produto } from 'src/assets/database/db-produto.interface';
 
 @Component({
 	selector: 'app-home',
@@ -11,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePage implements OnInit {
 	categories: any = [];
 	highlights: any = [];
-	featured: any = [];
+	produto: Produto[] | any;
 
 	catSlideOpts = {
 		slidesPerView: 3.5,
@@ -41,8 +42,12 @@ export class HomePage implements OnInit {
 		this.http.get('../../../assets/database/db.json').subscribe((res: any) => {
 			this.categories = res.categories;
 			this.highlights = res.highlights;
-			this.featured = res.featured;
 		});
+
+		this.http.get('../../../assets/database/db-produto.json')
+			.subscribe((res: any) => {
+				this.produto = res.produto;
+			});
 	}
 
 	// Dummy refresher function

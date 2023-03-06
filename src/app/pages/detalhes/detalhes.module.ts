@@ -8,6 +8,7 @@ import { DetalhesPageRoutingModule } from './detalhes-routing.module';
 
 import { DetalhesPage } from './detalhes.page';
 import { SharedModule } from 'src/app/components/shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { SharedModule } from 'src/app/components/shared/shared.module';
     FormsModule,
     IonicModule,
     DetalhesPageRoutingModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
   declarations: [DetalhesPage]
 })

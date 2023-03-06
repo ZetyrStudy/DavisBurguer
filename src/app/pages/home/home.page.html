@@ -23,18 +23,21 @@
 	<ion-text color="dark"><b style="padding-left: 10px;">Novidades e Mais Pedidos</b></ion-text>
     
 	<ion-slides [options]="featuredSlideOpts">
-		<ion-slide *ngFor="let f of featured" class="featured-slide" routerLink="/detalhes">
-			<img [src]="f.img" (click)="openPage(f.id)"/>
+		<ion-slide *ngIf="produto" class="featured-slide" routerLink="/detalhes">
+			<img [src]="produto[0].img" (click)="openPage(produto[0].id)"/>
 			<div class="info">
-				<ion-text color="dark"><b>{{f.name }}</b></ion-text>
-				<span>
-					<ion-icon name="star" color="secondary"></ion-icon>
-					<ion-text color="secondary"> {{ f.rating }} </ion-text>{{ f.ratings }}
-				</span>
-				<span> <ion-icon name="location-outline"></ion-icon> {{ f.distance }} </span>
+				<ion-text color="dark"><b>{{produto[0].nome }}</b></ion-text>
+				<p><ion-icon name="cash" color="secondary"></ion-icon>
+				<ion-text color="secondary"> {{ produto[0].preco | currency:'R$' }} </ion-text></p>
+				<p>{{ produto[0].sobre }}</p>
 			</div>
 		</ion-slide>
 	</ion-slides>
+
+
+	<br>
+	<br>
+
 
 	<div class="hearderMenu">
 		<div class="imgCardapio">
@@ -51,3 +54,5 @@
 	</div>
 
 </ion-content>
+
+<router-outlet></router-outlet>

@@ -1,6 +1,6 @@
 {
     "categories": [{
-        "title": "Offers",
+        "title": "Combos",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png"
       },
       {
@@ -40,24 +40,6 @@
       {
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/n4.png"
       }
-    ],
-    "featured": [
-        {
-          "name": "Vapiano",
-          "id": "1",
-          "rating": "4.5 Excellent",
-          "ratings": "(500+)",
-          "distance": "0.7 miles away",
-          "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/f1.jpeg"
-        },
-        {
-            "name": "✨Urban Greens✨",
-            "id": "2",
-            "rating": "4.8 Excellent",
-            "ratings": "(500+)",
-            "distance": "0.7 miles away",
-            "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/f2.jpeg"
-        }
     ]
   }
   

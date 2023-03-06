@@ -3,12 +3,24 @@
         "id": "0",
         "nome": "Hamburguer",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png",
-        "preco": "17,50"
+        "preco": "17.50",
+        "sobre": "Pão e carne",
+        "categoria": "burguer"
       },
       {
         "id": "1",
         "nome": "Cheeseburguer",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png",
-        "preco": "19,50"
+        "preco": "19.50",
+        "sobre": "Pão, queijo e carne",
+        "categoria": "burguer"
+      },
+      {
+        "id": "3",
+        "nome": "Coca Cola",
+        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png",
+        "preco": "7.50",
+        "sobre": "Refrigerante de cola",
+        "categoria": "bebidas"
       }
     ]}

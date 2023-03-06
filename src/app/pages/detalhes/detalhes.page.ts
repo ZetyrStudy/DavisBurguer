@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 import { IonContent, IonList, IonSlides, isPlatform } from '@ionic/angular';
 import { Produto } from 'src/assets/database/db-produto.interface';
-
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
 	selector: 'app-detalhes',
@@ -35,26 +35,23 @@ export class DetalhesPage implements OnInit, AfterViewInit {
 	@ViewChild(IonContent) content: IonContent | any;
 	categorySlidesVisible = false;
 
-	constructor(private http: HttpClient) { }
+	constructor(private http: HttpClient, public router:ActivatedRoute) { 
+		this.router.paramMap.subscribe((params:ParamMap)=>{
+		  const locail = (params.get('id'))
+		})
+	  }
 
 	ngOnInit() {
 		this.http
 			.get('https://devdactic.fra1.digitaloceanspaces.com/foodui/1.json')
 			.subscribe((res2: any) => {
 				this.data = res2;
-				console.log(res2);
 			});
 
 		this.http
 			.get('../../../assets/database/db-produto.json')
 			.subscribe((res: any) => {
 				this.produto = res.produto;
-				console.log("atum" + res.produto);
-
-				console.log("1" + this.produto.nome);
-
-				console.log("3" + this.produto[0].nome);
-				console.log("5" + this.produto[0][0]);
 			});
 
 	}
@@ -96,4 +93,8 @@ export class DetalhesPage implements OnInit, AfterViewInit {
 			rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
 		);
 	}
+
+	openPage = function () {
+		window.location.href = '../home';
+	};
 }

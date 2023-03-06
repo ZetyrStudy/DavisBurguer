@@ -20,4 +20,8 @@ export class HeaderComponent  implements OnInit {
 		this.showLocationDetail = offset > 40;
 	}
 
+  openPage = function () {
+		window.location.href = '../home';
+	};
+
 }

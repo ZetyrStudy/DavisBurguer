@@ -12,4 +12,12 @@ export class HeaderComponent  implements OnInit {
 
   ngOnInit() {}
 
+  showLocationDetail = false;
+
+  // show or hide a location string later
+	onScroll(ev: any) {
+		const offset = ev.detail.scrollTop;
+		this.showLocationDetail = offset > 40;
+	}
+
 }

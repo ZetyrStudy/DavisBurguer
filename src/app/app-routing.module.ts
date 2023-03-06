@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'cardapio',
     loadChildren: () => import('./pages/cardapio/cardapio.module').then( m => m.CardapioPageModule)
-  },  {
+  },
+  {
     path: 'cadastro',
     loadChildren: () => import('./pages/cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
@@ -30,6 +31,15 @@ const routes: Routes = [
     path: 'cupoens',
     loadChildren: () => import('./pages/cupoens/cupoens.module').then( m => m.CupoensPageModule)
   },
+  {
+    path: 'section-prod',
+    loadChildren: () => import('./pages/section-prod/section-prod.module').then( m => m.SectionProdPageModule)
+  },
+  {
+    path: 'detalhes',
+    loadChildren: () => import('./pages/detalhes/detalhes.module').then( m => m.DetalhesPageModule)
+  },
+
 
 ];
 

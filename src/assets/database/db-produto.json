@@ -1,0 +1,14 @@
+{
+    "produto": [{
+        "id": "0",
+        "nome": "Hamburguer",
+        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png",
+        "preco": "17,50"
+      },
+      {
+        "id": "1",
+        "nome": "Cheeseburguer",
+        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png",
+        "preco": "19,50"
+      }
+    ]}

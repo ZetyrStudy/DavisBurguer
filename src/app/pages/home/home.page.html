@@ -1,82 +1,53 @@
 <app-header></app-header>
+<ion-content scrollEvents="true" ionScroll="onScroll($event)">
 
-<ion-content [fullscreen]="true">
 
-  <div id="bannerHome">
-    <img src="../../assets/imagebanners/bannher.jpg" alt="">
-  </div>
+	<!--Seção dos sub-menus-->
+	<br>
+	<ion-slides [options]="catSlideOpts">
+		<ion-slide *ngFor="let cat of categories">
+			<img [src]="cat.img" />
+		</ion-slide>
+	</ion-slides>
+	<br>
 
-  <div class="hearderMenu">
-    <div class="imgCardapio">
-      <img  src="../../assets/icon/burguer.png" alt="">
-    </div>
-  </div>
+	<!--Seção dos  banners com palavras-->
+	<ion-slides [options]="highlightSlideOpts">
+		<ion-slide *ngFor="let h of highlights">
+			<img [src]="h.img" />
+		</ion-slide>
+	</ion-slides>
 
-  <div class="containerOrder">
-    <h3 >FAÇA SEU PEDIDO</h3>
-
-    <div>
-      <ion-button shape="round">COMPRAR AGORA</ion-button>
-    </div>
-  </div>   
-
-  <div class="containnerCategory">
+	<!--Carrosel das imagens grandes de novidades-->
+	<br>
+	<ion-text color="dark"><b style="padding-left: 10px;">Novidades e Mais Pedidos</b></ion-text>
     
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          
-          <ion-card>
-            <img alt="Silhouette of mountains" src="../../../assets/products/caramel.jpg" />
-            <ion-card-header>
-              <ion-label >LANÇAMENTOS</ion-label>
-              
-            </ion-card-header>
-          </ion-card>
-        </ion-col>
+	<ion-slides [options]="featuredSlideOpts">
+		<ion-slide *ngFor="let f of featured" class="featured-slide" routerLink="/detalhes">
+			<img [src]="f.img" (click)="openPage(f.id)"/>
+			<div class="info">
+				<ion-text color="dark"><b>{{f.name }}</b></ion-text>
+				<span>
+					<ion-icon name="star" color="secondary"></ion-icon>
+					<ion-text color="secondary"> {{ f.rating }} </ion-text>{{ f.ratings }}
+				</span>
+				<span> <ion-icon name="location-outline"></ion-icon> {{ f.distance }} </span>
+			</div>
+		</ion-slide>
+	</ion-slides>
 
-        <ion-col>
-          <ion-card>
-            <img alt="Silhouette of mountains" src="../../../assets/products/caramel.jpg" />
-            <ion-card-header>
-              <ion-label >COMBOS</ion-label>
-              
-            </ion-card-header>
-          </ion-card>
+	<div class="hearderMenu">
+		<div class="imgCardapio">
+			<img src="../../assets/icon/burguer.png" alt="">
+		</div>
+	</div>
 
-        
-        </ion-col>
-      </ion-row>
+	<div class="containerOrder">
+		<h3>FAÇA SEU PEDIDO</h3>
 
-      <ion-row>
-        <ion-col>
-          
-          <ion-card>
-            <img alt="Silhouette of mountains" src="../../../assets/products/caramel.jpg" />
-            <ion-card-header>
-              <ion-label >MAIS VENDIDOS</ion-label>
-              
-            </ion-card-header>
-          </ion-card>
-      
-        </ion-col>
-
-        <ion-col>
-
-          <ion-card>
-            <img alt="Silhouette of mountains" src="../../../assets/products/caramel.jpg" />
-            <ion-card-header>
-              <ion-label >BEBIDAS</ion-label>
-              
-            </ion-card-header>
-          </ion-card>
-
-        </ion-col>
-        
-      </ion-row>
-      
-    </ion-grid>
-
-  </div>
+		<div>
+			<ion-button shape="round">COMPRAR AGORA</ion-button>
+		</div>
+	</div>
 
 </ion-content>

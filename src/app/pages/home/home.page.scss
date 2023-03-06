@@ -51,3 +51,25 @@
 
   
 }
+
+ion-content {
+	--padding-top: 40px;
+}
+
+ion-refresher {
+	padding-top: calc(env(safe-area-inset-top) + 50px);
+}
+
+.location-visible {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.location-hidden {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.featured-slide{
+  padding-left: 15vw;
+}

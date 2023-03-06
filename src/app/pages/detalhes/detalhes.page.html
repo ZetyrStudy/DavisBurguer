@@ -6,7 +6,7 @@
 			</ion-button>
 		</ion-buttons>
 	<ng-container *ngIf="produto">
-		<ion-title>{{ produto[0].nome }}</ion-title>
+		<ion-title>{{ produto[idProd].nome }}</ion-title>
 	</ng-container>
 		<ion-buttons slot="end">
 			<ion-button fill="solid" shape="round" color="light">
@@ -27,11 +27,11 @@
 ></ion-content>
 
 <ion-content [fullscreen]="true" scrollEvents="true" (ionScroll)="onScroll($event)">
-	<div #img class="header-image" [style.background-image]="'url(' + data?.img + ')'"></div>
+	<div #img class="header-image"><img [src]="produto[idProd].img"></div>  <!--[style.background-image]="'url(' + data?.img + ')'"-->
 
 	<ion-header collapse="condense" class="ion-no-border">
 		<ion-toolbar color="light">
-			<ion-title size="large">{{ produto[0].nome }}</ion-title>
+			<ion-title size="large">{{ produto[idProd].nome }}</ion-title>
 		</ion-toolbar>
 	</ion-header>
 
@@ -45,7 +45,7 @@
 			</ion-col>
 			<ion-col size="12" class="ion-no-padding">
 				<ion-item lines="full">
-					<ion-label class="ion-text-wrap"> {{ produto[0].sobre }} </ion-label>
+					<ion-label class="ion-text-wrap"> {{ produto[idProd].sobre }} </ion-label>
 				</ion-item>
 			</ion-col>
 		</ion-row>

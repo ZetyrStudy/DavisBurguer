@@ -24,7 +24,7 @@
     
 	<ion-slides [options]="featuredSlideOpts">
 		<ion-slide *ngIf="produto" class="featured-slide" routerLink="/detalhes">
-			<img [src]="produto[0].img" (click)="openPage(produto[0].id)"/>
+			<img [src]="produto[0].img" (click)="openPage(produto[1].id)"/>
 			<div class="info">
 				<ion-text color="dark"><b>{{produto[0].nome }}</b></ion-text>
 				<p><ion-icon name="cash" color="secondary"></ion-icon>
@@ -38,12 +38,13 @@
 	<br>
 	<br>
 
-
+	
 	<div class="hearderMenu">
 		<div class="imgCardapio">
 			<img src="../../assets/icon/burguer.png" alt="">
 		</div>
 	</div>
+
 
 	<div class="containerOrder">
 		<h3>FAÇA SEU PEDIDO</h3>

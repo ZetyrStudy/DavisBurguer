@@ -18,9 +18,10 @@ ion-content {
 .header-image {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: 100vw;
 	height: 30vh;
 	will-change: transform;
+
 }
 
 ion-list-header {

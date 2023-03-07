@@ -1,0 +1,119 @@
+ion-content {
+    min-height: 100%;
+    .upper{
+        width:100%;
+        height: 200px;
+        padding-top: 50px;
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ion-icon {
+                font-size: 50px;
+            }
+        }
+        #login {
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+    .middle {
+        padding: 20px;
+
+        .box{
+            border-radius: 10px;
+            height: auto;
+            background: #fff;
+            padding: 20px;
+
+            ion-item {
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+
+            p {
+                color: gray;
+                text-align: center;
+            }
+
+            #forgetPassword {
+                font-size: 14px;
+                text-align: end;
+            }
+
+            .btn {
+                display: flex;
+                justify-content:center;
+
+                ion-button {
+                    --background: #0e0d0d;
+                }
+            
+            }
+
+            #media {
+                color: #0e0d0d;
+            }
+
+            .socialMedia{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                border-bottom: 1px solid gray;
+                border-top: 1px solid gray;
+                padding-top:10px;
+                padding-bottom: 10px;
+                ion-icon{
+                    padding-right: 15px;
+                    font-size:25px;
+                }
+
+                ion-icon:nth-child(1) {
+                    color: #4267b2;
+                }
+                ion-icon:nth-child(2) {
+                    color: #1da1f2;
+                }
+                ion-icon:nth-child(3) {
+                    color: #db5537;
+                }
+            }
+
+            .touchLogin {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:100%;
+                border-bottom: 1px solid gray;
+
+                ion-icon {
+                    color: rgb(172, 59, 59);
+                }
+            }
+
+            .faceLogin {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:100%;
+                border-bottom: 1px solid gray;
+
+                ion-icon {
+                    color: rgb(172, 59, 59);
+                }
+            }
+        }
+    }
+
+    .navigator{
+        display: flex;
+        justify-content:center;
+        width: 100%;
+
+        p{
+            color: white;
+        }
+    }
+}

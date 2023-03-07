@@ -2,6 +2,14 @@
 <ion-content scrollEvents="true" ionScroll="onScroll($event)">
 
 
+        <ion-toolbar class="title-category">
+            <div class="titleroute">
+                <ion-title class="title-custom" slot="start">CATEGORIAS</ion-title>
+                <div class="line"></div>
+            </div>
+        </ion-toolbar>
+
+	  
 	<!--Seção dos sub-menus-->
 	<br>
 	<ion-slides [options]="catSlideOpts">
@@ -20,8 +28,15 @@
 
 	<!--Carrosel das imagens grandes de novidades-->
 	<br>
-	<ion-text color="dark"><b style="padding-left: 10px;">Novidades e Mais Pedidos</b></ion-text>
-    
+
+	<ion-toolbar class="title-category">
+		<div class="titleroute">
+			<ion-title class="title-custom" slot="start">Novidades e Mais Pedidos</ion-title>
+			<div class="line"></div>
+		</div>
+	</ion-toolbar>
+	<br>
+
 	<ion-slides [options]="featuredSlideOpts">
 		<ion-slide *ngIf="produto" class="featured-slide" routerLink="/detalhes">
 			<img [src]="produto[0].img" (click)="openPage(produto[0].id)"/>

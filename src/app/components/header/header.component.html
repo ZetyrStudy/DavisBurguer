@@ -1,67 +1,67 @@
-<!--<ion-content scrollEvents="true" [appHideHeader]="hideheader" (ionScroll)="onScroll($event)">-->
-  <ion-menu contentId="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title slot="start" id="name">DAVI'S BURGUER</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item>
-          <ion-label routerLink="/cardapio">Cardapio</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label routerLink="/sadastro">Cadastro</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label routerLink="/cupoens">Cupões</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label routerLink="/sobre-nos">Sobre</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Login</ion-label>
-        </ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+
+  
+<ion-menu contentId="main-content" class='menu'>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title slot="start" id="name">DAVI'S BURGUER</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="book-outline" slot="start" ></ion-icon>
+        <ion-label routerLink="/cardapio" >Cardapio</ion-label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person-add-outline" slot="start"></ion-icon>
+        <ion-label routerLink="/cadastro" >Cadastro</ion-label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="ticket-outline" slot="start"></ion-icon>
+        <ion-label routerLink="/cupoens" >Cupões</ion-label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="storefront-outline" slot="start"></ion-icon>
+        <ion-label routerLink="/sobre-nos" >Sobre</ion-label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        <ion-label routerLink="/login">Login</ion-label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
   
   <ion-header id="main-content">
     <ion-toolbar id="header">
-      <!-- <ion-searchbar animated="true" placeholder="Animated"></ion-searchbar> -->
+
       <ion-row class="info-row" #hideheader>
-        <ion-col size="3" class="ion-padding-start">
+        <ion-col  class="ion-padding-start">
           
             <img id="logo" src="../../../assets/icon/logo_quadrado.png" (click)="openPage()" style="background-color: white; border-radius: 20px;">
-            <ion-buttons slot="start">Algo</ion-buttons>
         </ion-col>
-        <ion-col size="6" style="margin-left: 5vw;">
-          <ion-text color="light" >
-            <span><b>Apenas no Rio de Janeiro!</b></span>
-            <br/>
-            <span><b>Davi Burguer</b></span>
-          </ion-text>
+        <ion-col class="buttons">
+          <ion-buttons class="login_btn">
+            <ion-icon name="person-circle-outline" class="login_btn" slot="start"></ion-icon>
+          </ion-buttons>
+          <ion-buttons class="menu_btn">
+            <ion-menu-button class="menu_btn"></ion-menu-button>
+          </ion-buttons>
         </ion-col>
-        <ion-col size="2">
-          <ion-button fill="clear">
-            <ion-icon class="login-button" name="person-outline" slot="icon-only"></ion-icon>
-          </ion-button>
-        </ion-col>
+        
       </ion-row>
   
       <ion-row class="sticky-row">
-        <ion-col size="10">
-          <ion-text class="ion-padding-start" color="medium">
-            <b>Procure aqui</b></ion-text>
-          <br>
-          <ion-searchbar placeholder="Procure as delícias da casa..."></ion-searchbar>
+        <ion-col >
+
+          <ion-searchbar animated="true" placeholder="Procure as delícias da casa..."></ion-searchbar>
         </ion-col>
-        <ion-col size="2">
-          <ion-buttons slot="end" class="menu_btn">
-            <ion-menu-button></ion-menu-button>
-          </ion-buttons>
-        </ion-col> </ion-row>
+      </ion-row>
   
     </ion-toolbar>
   </ion-header>
- <!--</ion-content>--> 

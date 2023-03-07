@@ -42,13 +42,12 @@
     }
   }
 
+  
 
     ion-card-header{
       --background: #BF0404;
     
   }
-
-
   
 }
 
@@ -72,4 +71,31 @@ ion-refresher {
 
 .featured-slide{
   padding-left: 15vw;
+}
+
+.title-category{
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -15px;
+
+  .titleroute{
+
+      text-align: center;
+
+      .title-custom{
+          color: #BF0404;
+          font-weight:bold;
+      }
+      .line{
+          margin-top: 5px;
+          width: 200px;
+          height: 2px;
+          background: #F29F05;
+          position: relative;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
 }

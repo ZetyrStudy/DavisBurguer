@@ -55,4 +55,8 @@ export class LoginPage implements OnInit {
     
   }
 
+  openPage = function () {
+		window.location.href = '../home';
+	};
+
 }

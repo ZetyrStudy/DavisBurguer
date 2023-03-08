@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPage implements OnInit {
 
+  cadastro = {
+    email: '',
+    nome: '',
+    cpf: '',
+    telefone: '',
+    cep: ''
+
+  };
+
+  type: boolean = true;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  goToHome(){
+
+  }
+
+  changeType() {
+    this.type = !this.type;
   }
 
 }

@@ -1,5 +1,82 @@
 <app-header></app-header>
 
 <ion-content>
+<div class="banner">
+    <img src="../../../assets/home/Post instagram burger hamburguer.png" alt="">
+</div>
 
+<div class="form">
+    <div class="headerform">
+        <h3>CADASTRE-SE E GANHE 50% DE DESCONTO NA PRIMEIRA COMPRA!</h3>
+    </div>
+
+    <form #cadastroForm = 'ngForm' class="formlogin">
+        <ion-item>
+          <ion-label position="floating">EMAIL</ion-label>
+          <ion-input type="email" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="cadastro.email" required email></ion-input>
+          <ion-icon class="ion-align-self-center" slot="end" name="mail"></ion-icon>
+        </ion-item >
+
+          <div *ngIf="email.invalid && email.touched">
+            <ion-text color="danger text-center">
+              <h4 style="padding-left: 20px; margin-top:10px;">Por favor digite seu EMAIL!</h4>
+            </ion-text>
+          </div>
+
+          <ion-item>
+            <ion-label position="floating">NOME </ion-label>
+            <ion-input placeholder="NOME" name="nome" #nome="ngModel" [(ngModel)]="cadastro.nome" required></ion-input>
+            <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
+          </ion-item >
+
+          <div *ngIf="nome.invalid && nome.touched">
+            <ion-text color="danger text-center">
+              <h4 style="padding-left: 20px; margin-top:10px;">Por favor digite seu NOME!</h4>
+            </ion-text>
+          </div>
+
+          <ion-item>
+            <ion-label position="floating">CPF </ion-label>
+            <ion-input placeholder="CPF" name="cpf" #cpf="ngModel" [(ngModel)]="cadastro.cpf" required></ion-input>
+            <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
+          </ion-item >
+
+          <div *ngIf="cpf.invalid && cpf.touched">
+            <ion-text color="danger text-center">
+              <h4 style="padding-left: 20px; margin-top:10px;">Por favor digite seu CPF!</h4>
+            </ion-text>
+          </div>
+
+          <ion-item>
+            <ion-label position="floating">TELEFONE </ion-label>
+            <ion-input placeholder="TELEFONE" name="telefone" #telefone="ngModel" [(ngModel)]="cadastro.telefone" required></ion-input>
+            <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
+          </ion-item >
+
+
+          <div *ngIf="telefone.invalid && telefone.touched">
+            <ion-text color="danger text-center">
+              <h4 style="padding-left: 20px; margin-top:10px;">Por favor digite seu TELEFONE!</h4>
+            </ion-text>
+          </div>
+
+          <ion-item>
+            <ion-label position="floating">CEP </ion-label>
+            <ion-input placeholder="CEP" name="cep" #cep="ngModel" [(ngModel)]="cadastro.cep" required></ion-input>
+            <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
+          </ion-item >
+
+          <div *ngIf="cep.invalid && cep.touched">
+            <ion-text color="danger text-center">
+              <h4 style="padding-left: 20px; margin-top:10px;">Por favor digite seu CEP!</h4>
+            </ion-text>
+          </div>
+  
+
+            <div class="btn">
+              <ion-button (click)="goToHome()" [disabled]="cadastroForm.invalid">Login</ion-button>
+            </div>
+
+      </form>
+</div>
 </ion-content>

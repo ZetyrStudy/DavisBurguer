@@ -20,7 +20,7 @@ ion-content {
         }
     }
     .middle {
-        padding: 20px;
+
 
         .box{
             border-radius: 10px;
@@ -48,7 +48,7 @@ ion-content {
                 justify-content:center;
 
                 ion-button {
-                    --background: #0e0d0d;
+                    --background: #F29F05;
                 }
             
             }
@@ -116,4 +116,9 @@ ion-content {
             color: white;
         }
     }
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
 }

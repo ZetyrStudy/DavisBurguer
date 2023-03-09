@@ -2,4 +2,65 @@
 
 <ion-content>
 
+
+    	<!--Seção dos  banners com palavras-->
+	<ion-slides [options]="highlightSlideOpts" class="sliderCupom">
+		<ion-slide *ngFor="let h of highlights">
+			<img [src]="h.img" />
+		</ion-slide>
+	</ion-slides>
+
+
+    <ion-toolbar class="title-category">
+        <div class="titleroute">
+            <ion-title class="title-custom" slot="start">Ofertas imperdíveis</ion-title>
+            <div class="line"></div>
+        </div>
+    </ion-toolbar>
+
+
+    	<!--Seção dos cupões-->
+	<br>
+	<ion-slides [options]="catSlideOpts" class="sliderCardCupom">
+		<ion-slide *ngFor="let cupom of cupoes">
+			
+			<img [src]="cupom.img" />
+		</ion-slide>
+	</ion-slides>
+	<br>
+
+
+    <ion-toolbar class="title-category">
+        <div class="titleroute">
+            <ion-title class="title-custom" slot="start">Top 10</ion-title>
+            <div class="line"></div>
+        </div>
+    </ion-toolbar>
+
+        	<!--Seção dos cupões-->
+	<br>
+	<ion-slides [options]="catSlideOpts" class="sliderCardCupom">
+		<ion-slide *ngFor="let cupom of cupoes">
+			
+			<img [src]="cupom.img" />
+		</ion-slide>
+	</ion-slides>
+	<br>
+
+    <ion-toolbar class="title-category">
+        <div class="titleroute">
+            <ion-title class="title-custom" slot="start">Burguer bom é com cupom</ion-title>
+            <div class="line"></div>
+        </div>
+    </ion-toolbar>
+
+        	<!--Seção dos cupões-->
+	<br>
+	<ion-slides [options]="catSlideOpts" class="sliderCardCupom">
+		<ion-slide *ngFor="let cupom of cupoes">
+			
+			<img [src]="cupom.img" />
+		</ion-slide>
+	</ion-slides>
+	<br>
 </ion-content>

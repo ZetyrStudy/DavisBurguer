@@ -20,6 +20,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class DetalhesPage implements OnInit, AfterViewInit {
 	data: any = null;
 	produto: Produto[] | any;
+	idProd: number | any;
 
 	opts: any = {
 		freeMode: true,
@@ -37,9 +38,10 @@ export class DetalhesPage implements OnInit, AfterViewInit {
 
 	constructor(private http: HttpClient, public router:ActivatedRoute) { 
 		this.router.paramMap.subscribe((params:ParamMap)=>{
-		  const locail = (params.get('id'))
+		  this.idProd = (params.get('id'))
 		})
 	  }
+
 
 	ngOnInit() {
 		this.http

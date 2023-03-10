@@ -62,8 +62,7 @@ export class HomePage implements OnInit {
 		this.showLocationDetail = offset > 40;
 	}
 
-	openPage = function (input: number) {
-		console.log(window.location.hostname + "/detalhes?Key=" + input);
-		window.location.href = '../detalhes';
+	openPage = function (input: any) {
+		window.location.href = '../detalhes/' + input;
 	};
 }

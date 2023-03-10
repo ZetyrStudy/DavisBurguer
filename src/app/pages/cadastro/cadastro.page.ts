@@ -12,8 +12,8 @@ export class CadastroPage implements OnInit {
     nome: '',
     cpf: '',
     telefone: '',
-    cep: ''
-
+    cep: '',
+    senha: ''
   };
 
   type: boolean = true;

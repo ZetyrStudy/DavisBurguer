@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController, LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -9,50 +10,14 @@ export class LoginPage implements OnInit {
 
   login = {
     email: '',
-    password: '',
-
+    password: ''
   };
 
-  type: boolean = true;
-  constructor() { }
+  constructor(public alertCtrl: AlertController, public loadingCtrl: LoadingController) {
+  }
+
 
   ngOnInit() {
-  }
-
-  changeType() {
-    this.type = !this.type;
-  }
-
-  goToForget() {
-
-  }
-
-  goToHome() {
-
-  }
-
-  goToFacebook(){
-
-  }
-
-  goTotwitter(){
-    
-  }
-
-  goTogoogle(){
-    
-  }
-
-  touchLogin(){
-
-  }
-
-  faceLogin() {
-
-  }
-
-  goToRegister() {
-    
   }
 
   openPage = function () {
@@ -60,3 +25,5 @@ export class LoginPage implements OnInit {
 	};
 
 }
+
+//https://auth0.com/blog/adding-auth0-to-an-ionic-angular-app-using-auth-connect/

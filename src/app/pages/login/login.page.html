@@ -1,0 +1,50 @@
+<ion-content>
+  <div class="upper">
+    <div class="icon">
+      <img id="logo" src="../../../assets/icon/logo_quadrado.png" (click)="openPage()">
+    </div>
+  </div>
+
+  <div class="middle">
+    <div class="box">
+      <form #loginForm='ngForm'>
+        <p>Por favor logue-se em sua conta.</p>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="login.email" required
+            email></ion-input>
+          <ion-icon class="ion-align-self-center" slot="end" name="mail"></ion-icon>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password" placeholder="Senha" name="password" #password="ngModel"
+            [(ngModel)]="login.password" required></ion-input>
+          <ion-icon class="ion-align-self-center" slot="end" name="eye-outline"></ion-icon>
+        </ion-item>
+
+        <ion-row>
+          <ion-col size="8"></ion-col>
+        <a id="forgetPassword" [routerLink]="['/forgot-password']" class="small-text">Esqueci minha senha</a>
+      </ion-row>
+
+        <div class="btn">
+          <ion-button type="submit">Login</ion-button>
+        </div>
+      </form>
+
+      <p id="media">
+        Cadastre-se abaixo:
+      </p>
+
+      <div class="btn">
+        <ion-button [routerLink]="['/cadastro']">Cadastro</ion-button>
+      </div>
+
+    </div>
+
+    <div class="navigator">
+      <p>Don't have an Account ? Register Now</p>
+    </div>
+  </div>
+</ion-content>

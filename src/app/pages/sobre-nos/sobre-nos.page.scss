@@ -1,0 +1,51 @@
+.textsobre {
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.containerOrder{
+    font-family: 'Inter', sans-serif;
+    h3{
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #D97904;
+      font-family: 'Inter', sans-serif;
+    }
+    div{
+      display: flex;
+      justify-content: center;
+  
+      ion-button{
+        font-size: 13px;
+        font-weight: bold;
+        --background: #BF0404;
+        --color: #FFFFFF;
+        
+      }
+    }
+}
+
+.hearderMenu {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    .imgCardapio{
+      margin-top: 10px;
+      height: 80px;
+      width: 80px;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #F29F05;
+      border-radius: 50%;
+        color: #BF0404;
+      img{ 
+        height: 50px;
+        width: 50px;
+      }
+    }
+  
+  }

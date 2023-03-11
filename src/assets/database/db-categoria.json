@@ -32,13 +32,13 @@
         "img": "../../assets/imagebanners/bannher.jpg"
       },
       {
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/n2.png"
+        "img": "../../assets/imagebanners/banner2.png"
       },
       {
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/n3.png"
+        "img": "../../assets/imagebanners/banner3.png"
       },
       {
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/n4.png"
+        "img": "../../assets/imagebanners/banner4.png"
       }
     ]
   }

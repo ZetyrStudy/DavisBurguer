@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cupoens.page.scss'],
 })
 export class CupoensPage implements OnInit {
-  cupoes: any = [];
+  cupoes1: any = [];
+  cupoes2: any = [];
+  cupoes3: any = [];
   highlights: any = [];
 
   catSlideOpts = {
@@ -29,8 +31,10 @@ export class CupoensPage implements OnInit {
   constructor(private http: HttpClient) { }
 
 	ngOnInit() {
-		this.http.get('../../../assets/database/db-cupom.json').subscribe((res: any) => {
-			this.cupoes = res.cupoes;
+		this.http.get('../../../assets/database/db-cupomtest.json').subscribe((res: any) => {
+			this.cupoes1 = res.cupoes.catimperdiveis;
+			this.cupoes2 = res.cupoes.catTop10;
+			this.cupoes3 = res.cupoes.catBurguerbom;
 			this.highlights = res.highlights;
 		});
 

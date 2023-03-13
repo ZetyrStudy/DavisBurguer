@@ -28,8 +28,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/info-protudos/info-protudos.module').then( m => m.InfoProtudosPageModule)
   },
   {
-    path: 'cupoens',
-    loadChildren: () => import('./pages/cupoens/cupoens.module').then( m => m.CupoensPageModule)
+    path: 'cupoes',
+    loadChildren: () => import('./pages/cupoes/cupoes.module').then( m => m.CupoesPageModule)
   },
   {
     path: 'section-prod',

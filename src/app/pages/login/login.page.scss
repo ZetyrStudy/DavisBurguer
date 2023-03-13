@@ -53,6 +53,17 @@ ion-content {
             
             }
 
+
+            .btn-logout {
+                display: flex;
+                justify-content:center;
+
+                ion-button {
+                    --background: #F29F05;
+                }
+            
+            }
+
             #media {
                 color: #0e0d0d;
             }

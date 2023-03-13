@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CupoensPageRoutingModule } from './cupoens-routing.module';
+import { CupoesPageRoutingModule } from './cupoes-routing.module';
 
-import { CupoensPage } from './cupoens.page';
+import { CupoesPage } from './cupoes.page';
 import { SharedModule } from 'src/app/components/shared/shared.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { SharedModule } from 'src/app/components/shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    CupoensPageRoutingModule,
+    CupoesPageRoutingModule,
     SharedModule
   ],
-  declarations: [CupoensPage]
+  declarations: [CupoesPage]
 })
-export class CupoensPageModule {}
+export class CupoesPageModule {}

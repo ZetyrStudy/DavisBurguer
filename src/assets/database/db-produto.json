@@ -1,26 +1,163 @@
+    
 {
-    "produto": [{
-        "id": "0",
-        "nome": "Hamburguer",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png",
-        "preco": "17.50",
-        "sobre": "Pão e carne",
-        "categoria": "burguer"
-      },
-      {
-        "id": "1",
-        "nome": "Cheeseburguer",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png",
-        "preco": "19.50",
-        "sobre": "Pão, queijo e carne",
-        "categoria": "burguer"
-      },
-      {
-        "id": "3",
-        "nome": "Coca Cola",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png",
-        "preco": "7.50",
-        "sobre": "Refrigerante de cola",
-        "categoria": "bebidas"
-      }
-    ]}
+  "produto": [{
+      "id": "0",
+      "nome": "Hamburguer",
+      "img": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXYF1Z7/200/200/original?country=br",
+      "preco": "17.50",
+      "sobre": "Pão e carne",
+      "categoria": "burguer"
+    },
+    {
+      "id": "1",
+      "nome": "Cheeseburguer",
+      "img": "https://contenthub.kraftheinz.com/api/public/content/91c0242dbc2e479886547f52f0cb0812?v=04b07367&t=w1004",
+      "preco": "19.50",
+      "sobre": "Pão, queijo e carne",
+      "categoria": "burguer"
+    },
+    {
+      "id": "2",
+      "nome": "Duplo Cheeseburguer",
+      "img": "https://i.insider.com/56cc3ce2dd0895de048b456b?width=1000&format=jpeg&auto=webp",
+      "preco": "23.50",
+      "sobre": "Pão, queijo e duas carnes",
+      "categoria": "burguer"
+    },
+    {
+      "id": "3",
+      "nome": "Triplo Cheeseburguer",
+      "img": "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2013/12/19/mctriplo.jpeg",
+      "preco": "27.50",
+      "sobre": "Pão, queijo e três Carnes",
+      "categoria": "burguer"
+    },
+    {
+      "id": "4",
+      "nome": "Bacon Cheeseburguer",
+      "img": "https://i.insider.com/56cc3ce2dd0895de048b456b?width=1000&format=jpeg&auto=webp",
+      "preco": "25.50",
+      "sobre": "Pão, queijo, carne, bacon ",
+      "categoria": "burguer"
+    },
+    {
+      "id": "5",
+      "nome": "Coca Cola",
+      "img": "https://www.bistek.com.br/media/catalog/product/cache/0dc8cbd80dea80532032575673b29539/9/9/997463.jpg",
+      "preco": "7.50",
+      "sobre": "Refrigerante de cola",
+      "categoria": "bebidas"
+    },
+    {
+      "id": "6",
+      "nome": "Guaraná Antártica",
+      "img": "https://riomarrecife.com.br/recife/2020/03/guarana-antarctica.jpg",
+      "preco": "7.50",
+      "sobre": "Refrigerante de Guaraná",
+      "categoria": "bebidas"
+    },
+    {
+      "id": "7",
+      "nome": "Sprite",
+      "img": "https://supernossoio.vtexassets.com/arquivos/ids/212705-1600-auto?v=637808100611030000&width=1600&height=auto&aspect=true",
+      "preco": "7.50",
+      "sobre": "Refrigerante de limão",
+      "categoria": "bebidas"
+    },
+    {
+      "id": "8",
+      "nome": "Fanta uva",
+      "img": "https://media.soujusto.com.br/products/Refrigerante_Fanta_Uva_350Ml.jpg",
+      "preco": "7.50",
+      "sobre": "Refrigerante de uva",
+      "categoria": "bebidas"
+    },
+    {
+      "id": "9",
+      "nome": "Guaravita",
+      "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/167/768/products/refresco-liq-guarana-guaravita-copo-290m1-c0a3ea655dcfcb6bd415946678460231-640-0.jpg",
+      "preco": "4.00",
+      "sobre": "Guaraná Natural",
+      "categoria": "bebidas"
+    },
+    {
+      "id": "10",
+      "nome": "Batata Frita",
+      "img": "https://www.sabornamesa.com.br/media/k2/items/cache/377829b055e89e3afb894e7528a10996_XL.jpg",
+      "preco": "10.50",
+      "sobre": "Batata frita",
+      "categoria": "Acompanhamento"
+    },
+          {
+      "id": "11",
+      "nome": "Anéis de Cebola",
+      "img": "https://www.saboresajinomoto.com.br/_dist/images/template/blank.gif",
+      "preco": "10.50",
+      "sobre": "Anel de cebola empanado",
+      "categoria": "Acompanhamento"
+    },
+         {
+      "id": "12",
+      "nome": "Batata Suprema",
+      "img": "https://www.ohamburguerperfeito.com.br/wp-content/uploads/2013/10/93daf-image002.jpg",
+      "preco": "14.50",
+      "sobre": "Batata frita com cheddar e bacon ",
+      "categoria": "Acompanhamento"
+    },
+         {
+      "id": "13",
+      "nome": "Batata Canoa",
+      "img": "https://receitinhas.com.br/wp-content/uploads/2022/09/como-fazer-batata-rustica-de-forno-scaled-1-730x365.jpg",
+      "preco": "10.50",
+      "sobre": "Batata frita formato Canoa",
+      "categoria": "Acompanhamento"
+    },
+         {
+      "id": "14",
+      "nome": "Batata Chips",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Potato-Chips.jpg/1280px-Potato-Chips.jpg",
+      "preco": "10.50",
+      "sobre": "Batata frita chips",
+      "categoria": "Acompanhamento"
+    },
+    {
+      "id": "15",
+      "nome": "cheesecake ",
+      "img": "https://www.receitasedicasdochef.com.br/wp-content/uploads/2014/10/Receitas-de-Cheesecake.jpg",
+      "preco": "10.00",
+      "sobre": "torta de queijo acompanhada de geleia de goiaba",
+      "categoria": "Sobremesa"
+    },
+    {
+      "id": "16",
+      "nome": "Sorvete Casquinha ",
+      "img": "https://media.gazetadopovo.com.br/bomgourmet/2017/08/sorvete-1d8acfe0.jpg",
+      "preco": "2.50",
+      "sobre": "Casquinha de sorvete",
+      "categoria": "Sobremesa"
+    },
+    {
+      "id": "17",
+      "nome": "Sundae",
+      "img": "https://salvadornorteonline.com.br/salvadornorteonline/2021/02/Slide1.jpg",
+      "preco": "9.00",
+      "sobre": "Sorvete com caldo no copo",
+      "categoria": "Sobremesa"
+    },
+    {
+      "id": "18",
+      "nome": "Top sundae ",
+      "img": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/b5c7553c-3316-489c-b6aa-b50546c600af/201804131652_42456158.png",
+      "preco": "14.00",
+      "sobre": "Sorvete com calda extra e biscoito ",
+      "categoria": "Sobremesa"
+    },
+    {
+      "id": "19",
+      "nome": "Milk-Shake Chocolate  ",
+      "img": "https://img.cybercook.com.br/imagens/receitas/396/milk-shake-de-chocolate-especial-840x480.jpg?q=75",
+      "preco": "12.00",
+      "sobre": "Milk-shake sabor chocolate",
+      "categoria": "Sobremesa"
+    }
+]}

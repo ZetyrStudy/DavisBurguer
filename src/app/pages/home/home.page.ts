@@ -39,7 +39,7 @@ export class HomePage implements OnInit {
 	constructor(private http: HttpClient) { }
 
 	ngOnInit() {
-		this.http.get('../../../assets/database/db.json').subscribe((res: any) => {
+		this.http.get('../../../assets/database/db-categoria.json').subscribe((res: any) => {
 			this.categories = res.categories;
 			this.highlights = res.highlights;
 		});

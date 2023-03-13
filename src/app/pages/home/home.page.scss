@@ -103,3 +103,19 @@ ion-refresher {
 .box-compreja {
   padding-bottom: 15px;
 }
+
+
+.slidprod {
+
+  margin-right: 10px;
+  border: 1px solid #F29F05;
+  border-radius: 20px;
+  max-height: 200px;
+  .prodimg{
+    max-width: 150px;
+  }
+
+  .info{
+    padding: 5px;
+  }
+}

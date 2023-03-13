@@ -39,13 +39,13 @@
 	<br>
 
 	<ion-slides [options]="featuredSlideOpts">
-		<ion-slide *ngIf="produto" class="featured-slide" routerLink="/detalhes">
-			<img [src]="produto[0].img" (click)="openPage(produto[1].id)"/>
+		<ion-slide *ngFor="let prod of produto"  class="featured-slide" routerLink="/detalhes" class="slidprod">
+			<img [src]="prod.img" (click)="openPage(prod.id)" class="prodimg"/>
 			<div class="info">
-				<ion-text color="dark"><b>{{produto[0].nome }}</b></ion-text>
+				<ion-text color="dark"><b>{{prod.nome }}</b></ion-text>
 				<p><ion-icon name="cash" color="secondary"></ion-icon>
-				<ion-text color="secondary"> {{ produto[0].preco | currency:'R$' }} </ion-text></p>
-				<p>{{ produto[0].sobre }}</p>
+				<ion-text color="secondary"> {{ prod.preco | currency:'R$' }} </ion-text></p>
+				<p>{{ prod.sobre }}</p>
 			</div>
 		</ion-slide>
 	</ion-slides>

@@ -1,0 +1,66 @@
+{
+    "cupoes": {
+        "catimperdiveis":[{"img": "../../assets/cupoesimg/1.png"
+      },
+      {"img": "../../assets/cupoesimg/2.png"
+      },
+      {"img": "../../assets/cupoesimg/3.png"
+      },
+      {"img": "../../assets/cupoesimg/4.png"
+      }
+      ],
+      "catTop10":[{"img": "../../assets/cupoesimg/13.png"
+      },
+      {"img": "../../assets/cupoesimg/5.png"
+      },
+      {"img": "../../assets/cupoesimg/6.png"
+      },
+      {"img": "../../assets/cupoesimg/7.png"
+      }
+      ,
+      {"img": "../../assets/cupoesimg/1.png"
+      }
+      ,
+      {"img": "../../assets/cupoesimg/3.png"
+      }
+      ,
+      {"img": "../../assets/cupoesimg/8.png"
+      }
+      ,
+      {"img": "../../assets/cupoesimg/9.png"
+      }
+      ,
+      {"img": "../../assets/cupoesimg/2.png"
+      }
+      ,
+      {"img": "../../assets/cupoesimg/14.png"
+      }
+      ],
+      "catBurguerbom":[{"img": "../../assets/cupoesimg/8.png"
+      },
+      {"img": "../../assets/cupoesimg/9.png"
+      },
+      {"img": "../../assets/cupoesimg/10.png"
+      },
+      {"img": "../../assets/cupoesimg/11.png"
+      },
+      {"img": "../../assets/cupoesimg/12.png"
+      }
+      ]     
+      },
+    "highlights": [{
+      "img": "../../assets/imagebanners/bannher.jpg"
+    },
+    {
+      "img": "../../assets/imagebanners/banner2.png"
+    },
+    {
+      "img": "../../assets/imagebanners/banner3.png"
+    }
+    ,
+    {
+      "img": "../../assets/imagebanners/banner4.png"
+    }
+    ]
+  }
+  

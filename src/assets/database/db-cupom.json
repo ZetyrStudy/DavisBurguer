@@ -1,45 +1,66 @@
 {
     "cupoes": [{
-        "title": "Combos",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png"
+        "categoria": "imperdíveis",
+        "img": "../../assets/cupoesimg/1.png"
       },
       {
-        "title": "Burgers",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c2.png"
+        "categoria": "imperdíveis",
+        "img": "../../assets/cupoesimg/2.png"
       },
       {
-        "title": "Chicken",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c3.png"
+        "categoria": "imperdíveis",
+        "img": "../../assets/cupoesimg/3.png"
       },
       {
-        "title": "Pizza",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c4.png"
+        "categoria": "imperdíveis",
+        "img": "../../assets/cupoesimg/4.png"
       },
       {
-        "title": "Asian",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c5.png"
+        "categoria": "imperdíveis",
+        "img": "../../assets/cupoesimg/5.png"
       },
       {
-        "title": "Italian",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c6.png"
+        "categoria": "imperdíveis",
+        "img": "../../assets/cupoesimg/6.png"
       },
       {
-        "title": "Dessert",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c7.png"
+        "categoria": "Top10",
+        "img": "../../assets/cupoesimg/7.png"
+      },
+      {
+        "categoria": "Top10",
+        "img": "../../assets/cupoesimg/8.png"
+      },
+      {
+        "categoria": "Top10",
+        "img": "../../assets/cupoesimg/9.png"
+      },
+      {
+        "categoria": "Top10",
+        "img": "../../assets/cupoesimg/10.png"
+      },
+      {
+        "categoria": "Top10",
+        "img": "../../assets/cupoesimg/11.png"
+      },
+      {
+        "categoria": "Top10",
+        "img": "../../assets/cupoesimg/12.png"
       }
     ],
     "highlights": [{
-        "img": "../../assets/imagebanners/bannher.jpg"
-      },
-      {
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/n2.png"
-      },
-      {
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/n3.png"
-      },
-      {
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/n4.png"
-      }
+      "img": "../../assets/imagebanners/bannher.jpg"
+    },
+    {
+      "img": "../../assets/imagebanners/banner2.png"
+    },
+    {
+      "img": "../../assets/imagebanners/banner3.png"
+    }
+    ,
+    {
+      "img": "../../assets/imagebanners/banner4.png"
+    }
     ]
   }
   

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { map, tap, switchMap } from 'rxjs/operators';
 import { BehaviorSubject, from, Observable, Subject } from 'rxjs';
 
-import { Storage } from '@capacitor/storage';
+import { Preferences } from '@capacitor/preferences';
 
 const TOKEN_KEY = 'my-token';
 
@@ -20,7 +20,7 @@ export class AuthenticationService {
   }
 
   async loadToken() {
-    const token = await Storage.get({ key: TOKEN_KEY });
+    const token = await Preferences.get({ key: TOKEN_KEY });
     if (token && token.value) {
       console.log('set token: ', token.value);
       this.token = token.value;
@@ -34,7 +34,7 @@ export class AuthenticationService {
     return this.http.post(`https://reqres.in/api/login`, credentials).pipe(
       map((data: any) => data.token),
       switchMap((token) => {
-        return from(Storage.set({ key: TOKEN_KEY, value: token }));
+        return from(Preferences.set({ key: TOKEN_KEY, value: token }));
       }),
       tap((_) => {
         this.isAuthenticated.next(true);
@@ -44,6 +44,6 @@ export class AuthenticationService {
 
   logout(): Promise<void> {
     this.isAuthenticated.next(false);
-    return Storage.remove({ key: TOKEN_KEY });
+    return Preferences.remove({ key: TOKEN_KEY });
   }
 }

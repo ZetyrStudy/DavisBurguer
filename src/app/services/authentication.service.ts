@@ -31,7 +31,8 @@ export class AuthenticationService {
   }
 
   login(credentials: { email: any; password: any }): Observable<any> {
-    return this.http.post(`https://reqres.in/api/login`, credentials).pipe(
+    console.log("Atum2" + credentials + " email: " + credentials.email + " pass: " + credentials.password );
+    return this.http.get('../../assets/database/db-usuario.json').pipe(
       map((data: any) => data.token),
       switchMap((token) => {
         return from(Preferences.set({ key: TOKEN_KEY, value: token }));

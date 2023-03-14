@@ -15,7 +15,7 @@
 	<ion-slides [options]="catSlideOpts">
 		<ion-slide *ngFor="let cat of categories">
 			
-			<img [src]="cat.img" routerLink="/categorias/{{cat.name}}"/>
+			<img [src]="cat.img" routerLink="/categorias/{{cat.title}}"/>
 		</ion-slide>
 	</ion-slides>
 	<br>

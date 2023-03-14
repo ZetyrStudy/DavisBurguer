@@ -1,14 +1,28 @@
 <app-header></app-header>
 
 
-<ion-content>
+<ion-content *ngIf="categoriaId === Cupões">
   <ion-header>
       <ion-toolbar class="title-category">
           <div class="titleroute">
-              <ion-title class="title-custom" slot="start">CATEGORIAS</ion-title>
+              <ion-title class="title-custom" slot="start">{{categoriaId.toUpperCase()}}</ion-title>
               <div class="line"></div>
           </div>
       </ion-toolbar>
     </ion-header>
+
+    <ion-slides [options]="featuredSlideOpts" >
+		<ion-slide *ngFor="let prod of produto"  class="featured-slide" routerLink="/detalhes" class="slidprod" >
+            <div *ngIf="prod.categoria === categoriaId">
+                <img [src]="prod.img" (click)="openPage(prod.id)" class="prodimg"/>
+                <div class="info">
+                    <ion-text color="dark"><b>{{prod.nome }}</b></ion-text>
+                    <p><ion-icon name="cash" color="secondary"></ion-icon>
+                    <ion-text color="secondary"> {{ prod.preco | currency:'R$' }} </ion-text></p>
+                    <p>{{ prod.sobre }}</p>
+                </div>
+            </div>
+		</ion-slide>
+	</ion-slides>
 </ion-content>
 

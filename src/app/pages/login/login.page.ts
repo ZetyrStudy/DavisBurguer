@@ -13,6 +13,8 @@ export class LoginPage implements OnInit {
 
   credentials: FormGroup | any;
 
+  isLogged = this.authService.isAuthenticated.value;
+
   constructor(
 		private fb: FormBuilder,
 		private authService: AuthenticationService,
@@ -23,15 +25,18 @@ export class LoginPage implements OnInit {
 
 	ngOnInit() {
 		this.credentials = this.fb.group({
-			email: ['eve.holt@reqres.in', [Validators.required, Validators.email]],
-			password: ['cityslicka', [Validators.required, Validators.minLength(6)]]
+			email: ['', [Validators.required, Validators.email]],
+			password: ['', [Validators.required, Validators.minLength(6)]]   
 		});
 	}
+  //email: ['eve.holt@reqres.in', [Validators.required, Validators.email]],
+  //password: ['cityslicka', [Validators.required, Validators.minLength(6)]]
 
 	async login() {
 		const loading = await this.loadingController.create();
 		await loading.present();
 
+    console.log("Atum1" + this.credentials.value);
 		this.authService.login(this.credentials.value).subscribe(
 			async (res) => {
 				await loading.dismiss();

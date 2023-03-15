@@ -34,14 +34,20 @@
           <a id="forgetPassword" [routerLink]="['/forgot-password']" class="small-text">Esqueci minha senha</a>
         </ion-row>
 
-        <div class="btn">
-          <ion-button type="submit" expand="block" [disabled]="!credentials.valid">Log in</ion-button>
-        </div>
-        <div class="btn-logout">
-          <ion-button (click)="logout()">Logout</ion-button>
-        </div>
+        <div *ngIf="isLogged==false; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>
+          <div class="btn">
+            <ion-button type="submit" expand="block" [disabled]="!credentials.valid">Log in</ion-button>
+          </div>
+        </ng-template>
+        <ng-template #elseBlock>
+          <div class="btn-logout">
+            <ion-button (click)="logout()">Logout</ion-button>
+          </div>
+        </ng-template>
       </form>
 
+      <span *ngIf="isLogged==false">
       <p id="media">
         Cadastre-se abaixo:
       </p>
@@ -49,7 +55,7 @@
       <div class="btn">
         <ion-button [routerLink]="['/cadastro']">Cadastro</ion-button>
       </div>
-
+    </span>
     </div>
 
     <div class="navigator">

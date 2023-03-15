@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ProductService } from 'src/app/services/product.service';
 import { Produto } from 'src/assets/database/db-produto.interface';
 
 @Component({
@@ -10,31 +11,41 @@ import { Produto } from 'src/assets/database/db-produto.interface';
 })
 export class CategoriasPage implements OnInit {
 
-	produto: Produto[] | any;
-  categoriaId: string | any;
+  productList: any[] = [];
+  categoryId: string | any;
 
-  constructor(public router:ActivatedRoute, private http: HttpClient) { 
+
+  constructor(public router:ActivatedRoute, private http: HttpClient, private productService: ProductService) { 
     this.router.paramMap.subscribe((params:ParamMap)=>{
-      this.categoriaId = (params.get('id'))
-      console.log(params.get('id'))
+      this.categoryId = (params.get('id'))
     })
   }
 
-  featuredSlideOpts = {
-		slidesPerView: 1.2,
-		spaceBetween: 10,
-		freeMode: true
-	};
 
   ngOnInit() {
     this.http.get('../../../assets/database/db-produto.json')
     .subscribe((res: any) => {
-      this.produto = res.produto;
+      this.productList = res.produto;
+      console.log(res.produto + "linha 33")
     });
+    
   }
 
   openPage = function (input: any) {
 		window.location.href = '../detalhes/' + input;
 	};
+
+  filterProductsByCategory(categoryName: string) {
+    if (!categoryName) {
+      // se não houver nome de categoria informado, retornamos todos os produtos
+      return this.productList;
+    }
+  
+    return this.productList.filter(product => {
+      // para cada produto, verificamos se a propriedade category possui o nome da categoria informada
+      return product.categoria === categoryName;
+    });
+  }
+  
 
 }

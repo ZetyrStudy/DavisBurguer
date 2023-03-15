@@ -15,7 +15,7 @@
 	<ion-slides [options]="catSlideOpts">
 		<ion-slide *ngFor="let cat of categories">
 			
-			<img [src]="cat.img" routerLink="/categorias/{{cat.name}}"/>
+			<img [src]="cat.img" routerLink="/categorias/{{cat.title}}"/>
 		</ion-slide>
 	</ion-slides>
 	<br>
@@ -39,14 +39,24 @@
 	<br>
 
 	<ion-slides [options]="featuredSlideOpts">
-		<ion-slide *ngFor="let prod of produto"  class="featured-slide" routerLink="/detalhes" class="slidprod">
-			<img [src]="prod.img" (click)="openPage(prod.id)" class="prodimg"/>
+		<ion-slide *ngFor="let prod of produto"  class="featured-slide" routerLink="/detalhes" class="">
+			<!-- <img [src]="prod.img" (click)="openPage(prod.id)" class="prodimg"/>
 			<div class="info">
 				<ion-text color="dark"><b>{{prod.nome }}</b></ion-text>
 				<p><ion-icon name="cash" color="secondary"></ion-icon>
 				<ion-text color="secondary"> {{ prod.preco | currency:'R$' }} </ion-text></p>
 				<p>{{ prod.sobre }}</p>
-			</div>
+			</div> -->
+
+			    
+			<ion-card>
+				<img [src]="prod.img" (click)="openPage(prod.id)" class="prodimg"/>
+			<ion-card-header>
+				<ion-label class="titleprod">{{ prod.nome }}</ion-label>
+				<p><strong>Preço:</strong> {{ prod.preco | currency:'R$'}}</p>
+				<p><strong>Descrição:</strong> {{ prod.sobre }}</p>
+			</ion-card-header>
+			</ion-card>
 		</ion-slide>
 	</ion-slides>
 

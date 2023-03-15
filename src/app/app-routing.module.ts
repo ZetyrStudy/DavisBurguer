@@ -44,10 +44,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'categorias',
-    loadChildren: () => import('./pages/categorias/categorias.module').then( m => m.CategoriasPageModule)
-  },
-  {
     path: 'categorias/:id',
     loadChildren: () => import('./pages/categorias/categorias.module').then( m => m.CategoriasPageModule)
   },

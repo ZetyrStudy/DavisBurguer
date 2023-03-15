@@ -1,14 +1,35 @@
 <app-header></app-header>
 
 
-<ion-content>
+<ion-content >
   <ion-header>
       <ion-toolbar class="title-category">
           <div class="titleroute">
-              <ion-title class="title-custom" slot="start">CATEGORIAS</ion-title>
+              <ion-title class="title-custom" slot="start">{{categoryId.toUpperCase()}}</ion-title>
               <div class="line"></div>
           </div>
       </ion-toolbar>
     </ion-header>
+
+        <div>
+            <ion-grid>
+                <ion-row *ngFor="let product of filterProductsByCategory(categoryId)">
+                    <ion-col>
+    
+                        <ion-card>
+                            <img [src]="product.img" (click)="openPage(product.id)" class="prodimg"/>
+                        <ion-card-header>
+                            <ion-label class="titleprod">{{ product.nome }}</ion-label>
+                            <p><strong>Preço:</strong> {{ product.preco | currency:'R$'}}</p>
+                            <p><strong>Descrição:</strong> {{ product.sobre }}</p>
+                        </ion-card-header>
+                        </ion-card>
+            
+                    </ion-col>
+                
+                </ion-row>
+            </ion-grid>
+          </div>      
+
 </ion-content>
 

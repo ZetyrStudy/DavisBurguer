@@ -1,30 +1,30 @@
 {
     "categories": [{
-        "title": "Combos",
+        "title": "Cupões",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png"
       },
       {
-        "title": "Burgers",
+        "title": "burguer",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c2.png"
       },
       {
-        "title": "Chicken",
+        "title": "Combos",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c3.png"
       },
       {
-        "title": "Pizza",
+        "title": "bebidas",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c4.png"
       },
       {
-        "title": "Asian",
+        "title": "Sobremesa",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c5.png"
       },
       {
-        "title": "Italian",
+        "title": "Acompanhamento",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c6.png"
       },
       {
-        "title": "Dessert",
+        "title": "MaisVendidos",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c7.png"
       }
     ],

@@ -1,0 +1,40 @@
+.title-category{
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .titleroute{
+
+        text-align: center;
+
+        .title-custom{
+            color: #BF0404;
+            font-weight:bold;
+        }
+        .line{
+            margin-top: 5px;
+            width: 200px;
+            height: 2px;
+            background: #F29F05;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.titleprod{
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    color: #F29F05;
+}
+
+.title-custom2{
+    font-weight: bold;
+    color: #F29F05;
+    padding-top: 10px;
+}

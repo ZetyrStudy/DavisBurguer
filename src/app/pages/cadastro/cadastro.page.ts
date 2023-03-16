@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Usuario } from 'src/assets/database/db-usuario.interface';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,20 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPage implements OnInit {
 
-  cadastro = {
-    email: '',
-    nome: '',
-    cpf: '',
-    telefone: '',
-    cep: '',
-    senha: ''
-  };
+  cadastro: FormGroup | any;
 
   type: boolean = true;
-  constructor() { }
+  constructor(
+    private http: HttpClient,
+    private fb: FormBuilder
+    ) { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+      this.cadastro = this.fb.group({
+        email: ['', [Validators.required, Validators.email]],
+        nome: ['', [Validators.required, Validators.minLength(6)]],
+        cpf: ['', [Validators.required, Validators.minLength(11)]],
+        telefone: ['', [Validators.required, Validators.minLength(8)]],
+        cep: ['', [Validators.required, Validators.minLength(8)]],
+        senha: ['', [Validators.required, Validators.minLength(6)]],
+      });
+    }
 
   goToHome(){
 
@@ -28,6 +35,11 @@ export class CadastroPage implements OnInit {
 
   changeType() {
     this.type = !this.type;
+  }
+
+  cadastroUsuario(){
+    console.log("Cadastro: " + this.cadastro);
+    return this.http.post<Usuario>('../../assets/database/db-usuario.json', this.cadastro);
   }
 
 }

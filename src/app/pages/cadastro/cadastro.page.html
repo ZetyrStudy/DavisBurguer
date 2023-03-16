@@ -10,58 +10,35 @@
         <h3>CADASTRE-SE E GANHE 50% DE DESCONTO NA PRIMEIRA COMPRA!</h3>
     </div>
 
-    <form #cadastroForm = 'ngForm' class="formlogin">
-        <ion-item>
-          <ion-label position="floating">EMAIL</ion-label>
-          <ion-input type="email" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="cadastro.email" required email></ion-input>
-          <ion-icon class="ion-align-self-center" slot="end" name="mail"></ion-icon>
-        </ion-item >
-
-          <div *ngIf="email.invalid && email.touched">
-            <ion-text color="danger text-center">
-              <h4 style="padding-left: 20px; margin-top:10px;">Por favor digite seu EMAIL!</h4>
-            </ion-text>
-          </div>
-
+    <form (ngSubmit)="cadastroUsuario()" [formGroup]="cadastro" #loginForm='ngForm'>
+        
           <ion-item>
-            <ion-label position="floating">NOME </ion-label>
-            <ion-input placeholder="NOME" name="nome" #nome="ngModel" [(ngModel)]="cadastro.nome" required></ion-input>
-            <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
-          </ion-item >
-
-          <div *ngIf="nome.invalid && nome.touched">
-            <ion-text color="danger text-center">
-              <h4 style="padding-left: 20px; margin-top:10px;">Por favor digite seu NOME!</h4>
-            </ion-text>
-          </div>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input placeholder="NOME" formControlName="nome" name="nome" required></ion-input>
+            <ion-icon class="ion-align-self-center" slot="end" name="eye-outline"></ion-icon>
+          </ion-item>
 
           <ion-item>
             <ion-label position="floating">CPF </ion-label>
-            <ion-input placeholder="CPF" name="cpf" #cpf="ngModel" [(ngModel)]="cadastro.cpf" required></ion-input>
+            <ion-input placeholder="CPF" formControlName="cpf" name="cpf" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
           </ion-item >
 
-          <div *ngIf="cpf.invalid && cpf.touched">
-            <ion-text color="danger text-center">
-              <h4 style="padding-left: 20px; margin-top:10px;">Por favor digite seu CPF!</h4>
-            </ion-text>
-          </div>
-
           <ion-item>
             <ion-label position="floating">TELEFONE </ion-label>
-            <ion-input placeholder="TELEFONE" name="telefone" #telefone="ngModel" [(ngModel)]="cadastro.telefone" required></ion-input>
+            <ion-input placeholder="TELEFONE" formControlName="telefone" name="telefone" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
           </ion-item >
 
           <ion-item>
             <ion-label position="floating">CEP </ion-label>
-            <ion-input placeholder="CEP" name="cep" #cep="ngModel" [(ngModel)]="cadastro.cep" required></ion-input>
+            <ion-input placeholder="CEP" formControlName="cep" name="cep" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
           </ion-item >
 
           <ion-item>
             <ion-label position="floating">Senha </ion-label>
-            <ion-input placeholder="Senha" name="senha" #cep="ngModel" [(ngModel)]="cadastro.senha" required></ion-input>
+            <ion-input placeholder="SENHA" formControlName="senha" name="senha" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
           </ion-item >
 

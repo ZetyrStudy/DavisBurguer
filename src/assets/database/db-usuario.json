@@ -1,4 +1,8 @@
 {
     "email": "atum@atum",
-    "password": "sardinha"
+    "nome": "Atum",
+    "cpf": "150.150.150-15",
+    "telefone": "99999-9999",
+    "cep": "22222-222",
+    "senha": "sardinha"
 }

@@ -31,7 +31,6 @@ export class AuthenticationService {
   }
 
   login(credentials: { email: any; password: any }): Observable<any> {
-    console.log("Atum2" + credentials + " email: " + credentials.email + " pass: " + credentials.password );
     return this.http.get('../../assets/database/db-usuario.json').pipe(
       map((data: any) => data.token),
       switchMap((token) => {
@@ -47,4 +46,6 @@ export class AuthenticationService {
     this.isAuthenticated.next(false);
     return Preferences.remove({ key: TOKEN_KEY });
   }
+
+  
 }

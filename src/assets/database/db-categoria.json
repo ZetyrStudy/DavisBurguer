@@ -1,23 +1,23 @@
 {
     "categories": [{
         "title": "Cupões",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c1.png"
+        "img": "../../assets/categoriasimg/descontos.png"
       },
       {
-        "title": "burguer",
+        "title": "Burguer",
         "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c2.png"
       },
       {
         "title": "Combos",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c3.png"
+        "img": "../../assets/categoriasimg/combos.png"
       },
       {
         "title": "bebidas",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c4.png"
+        "img": "../../assets/categoriasimg/bebidas.png"
       },
       {
         "title": "Sobremesa",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c5.png"
+        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c7.png"
       },
       {
         "title": "Acompanhamento",
@@ -25,7 +25,7 @@
       },
       {
         "title": "MaisVendidos",
-        "img": "https://devdactic.fra1.digitaloceanspaces.com/foodui/c7.png"
+        "img": "../../assets/categoriasimg/maispedidos.png"
       }
     ],
     "highlights": [{

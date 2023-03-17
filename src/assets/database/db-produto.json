@@ -1,4 +1,3 @@
-    
 {
   "produto": [{
       "id": "0",
@@ -6,7 +5,7 @@
       "img": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXYF1Z7/200/200/original?country=br",
       "preco": "17.50",
       "sobre": "Pão e carne",
-      "categoria": "burguer"
+      "categoria": "Burguer"
     },
     {
       "id": "1",
@@ -14,7 +13,7 @@
       "img": "https://contenthub.kraftheinz.com/api/public/content/91c0242dbc2e479886547f52f0cb0812?v=04b07367&t=w1004",
       "preco": "19.50",
       "sobre": "Pão, queijo e carne",
-      "categoria": "burguer"
+      "categoria": "Burguer"
     },
     {
       "id": "2",
@@ -22,7 +21,7 @@
       "img": "https://i.insider.com/56cc3ce2dd0895de048b456b?width=1000&format=jpeg&auto=webp",
       "preco": "23.50",
       "sobre": "Pão, queijo e duas carnes",
-      "categoria": "burguer"
+      "categoria": "Burguer"
     },
     {
       "id": "3",
@@ -30,7 +29,7 @@
       "img": "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2013/12/19/mctriplo.jpeg",
       "preco": "27.50",
       "sobre": "Pão, queijo e três Carnes",
-      "categoria": "burguer"
+      "categoria": "Burguer"
     },
     {
       "id": "4",
@@ -38,7 +37,7 @@
       "img": "https://i.insider.com/56cc3ce2dd0895de048b456b?width=1000&format=jpeg&auto=webp",
       "preco": "25.50",
       "sobre": "Pão, queijo, carne, bacon ",
-      "categoria": "burguer"
+      "categoria": "Burguer"
     },
     {
       "id": "5",
@@ -159,5 +158,71 @@
       "preco": "12.00",
       "sobre": "Milk-shake sabor chocolate",
       "categoria": "Sobremesa"
+    },
+    {
+      "id": "20",
+      "nome": "X-Salada ",
+      "img": "../../assets/products/xsalada.png",
+      "preco": "15.90",
+      "sobre": "Hambúrguer com carne, queijo, alface, tomate e cebola",
+      "categoria": "MaisVendidos"
+    },
+    {
+      "id": "21",
+      "nome": "X-Toscana",
+      "img": "../../assets/products/xtoscana.png",
+      "preco": "17.90",
+      "sobre": "Hambúrguer com linguiça toscana",
+      "categoria": "MaisVendidos"
+    }, 
+    {
+      "id": "22",
+      "nome": "Bloody Mary",
+      "img": "../../assets/products/bloodymary.png",
+      "preco": "18.90",
+      "sobre": "Hambúrguer mal passado com bastante molho",
+      "categoria": "Maisvendidos"
+    },
+    {
+      "id": "23",
+      "nome": "X-Chicken",
+      "img": "../../assets/products/xchicken.png",
+      "preco": "16.90",
+      "sobre": "Hambúrguer com carne de frango empanado",
+      "categoria": "MaisVendidos"
+    },     	
+{
+      "id": "24",
+      "nome": "Combo Salada",
+      "img": "../../assets/products/combosalada.png",
+      "preco": "24.90",
+      "sobre": "Combo X-Salada, refrigerante e batata frita",
+      "categoria": "Combos"
+    },
+    {
+      "id": "25",
+      "nome": "Combo Toscana",
+      "img": "../../assets/products/combotoscana.png",
+      "preco": "25.90",
+      "sobre": "Combo X-Toscana, refrigerante e batata frita",
+      "categoria": "Combos"
+    },
+    {
+      "id": "26",
+      "nome": "Bloody Combo",
+      "img": "../../assets/products/bloodycombo.png",
+      "preco": "28.90",
+      "sobre": "Combo Bloody Mary, refrigerante e batata frita",
+      "categoria": "Combos"
+    },
+    {
+      "id": "27",
+      "nome": "Chicken Combo",
+      "img": "../../assets/products/chickencombo.png",
+      "preco": "29.90",
+      "sobre": "Combo X-Chicken, refrigerante e batata frita",
+      "categoria": "Combos"
     }
-]}
+  ]
+  }
+

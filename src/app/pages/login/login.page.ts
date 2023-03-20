@@ -72,5 +72,3 @@ export class LoginPage implements OnInit {
 	}
 
 }
-
-//https://www.postman.com/solar-moon-717210/workspace/reqres-api/documentation/13353731-c5c207fd-99de-45a6-8283-edd5ad2b8c2b

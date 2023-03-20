@@ -14,31 +14,31 @@
         
           <ion-item>
             <ion-label position="floating">Email</ion-label>
-            <ion-input placeholder="NOME" formControlName="nome" name="nome" required></ion-input>
+            <ion-input placeholder="EMAIL" formControlName="email" class="form-control" name="email" type="email" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline"></ion-icon>
           </ion-item>
 
           <ion-item>
             <ion-label position="floating">CPF </ion-label>
-            <ion-input placeholder="CPF" formControlName="cpf" name="cpf" required></ion-input>
+            <ion-input placeholder="CPF" formControlName="cpf" class="form-control" name="cpf" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
           </ion-item >
 
           <ion-item>
             <ion-label position="floating">TELEFONE </ion-label>
-            <ion-input placeholder="TELEFONE" formControlName="telefone" name="telefone" required></ion-input>
+            <ion-input placeholder="TELEFONE" formControlName="telefone" class="form-control" name="telefone" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
           </ion-item >
 
           <ion-item>
             <ion-label position="floating">CEP </ion-label>
-            <ion-input placeholder="CEP" formControlName="cep" name="cep" required></ion-input>
+            <ion-input placeholder="CEP" formControlName="cep" class="form-control" name="cep" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
           </ion-item >
 
           <ion-item>
             <ion-label position="floating">Senha </ion-label>
-            <ion-input placeholder="SENHA" formControlName="senha" name="senha" required></ion-input>
+            <ion-input placeholder="SENHA" formControlName="senha" class="form-control" name="senha" type="password" required></ion-input>
             <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" ></ion-icon>
           </ion-item >
 
@@ -50,7 +50,7 @@
   
 
             <div class="btn">
-              <ion-button type="submit">Login</ion-button>
+              <ion-button type="submit" [disabled] ="!cadastro.valid">Cadastre-se</ion-button>
             </div>
 
       </form>

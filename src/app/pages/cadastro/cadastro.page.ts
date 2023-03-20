@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Usuario } from 'src/assets/database/db-usuario.interface';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -13,33 +14,54 @@ export class CadastroPage implements OnInit {
   cadastro: FormGroup | any;
 
   type: boolean = true;
+
   constructor(
     private http: HttpClient,
-    private fb: FormBuilder
-    ) { }
+    private fb: FormBuilder,
+    private ps: ProductService
+  ) { }
 
-    ngOnInit() {
-      this.cadastro = this.fb.group({
-        email: ['', [Validators.required, Validators.email]],
-        nome: ['', [Validators.required, Validators.minLength(6)]],
-        cpf: ['', [Validators.required, Validators.minLength(11)]],
-        telefone: ['', [Validators.required, Validators.minLength(8)]],
-        cep: ['', [Validators.required, Validators.minLength(8)]],
-        senha: ['', [Validators.required, Validators.minLength(6)]],
-      });
-    }
-
-  goToHome(){
-
+  ngOnInit() {
+    this.cadastro = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      //nome: ['', [Validators.required, Validators.minLength(6)]],
+      cpf: ['', [Validators.required, Validators.minLength(11)]],
+      telefone: ['', [Validators.required, Validators.minLength(8)]],
+      cep: ['', [Validators.required, Validators.minLength(8)]],
+      senha: ['', [Validators.required, Validators.minLength(6)]],
+    });
+    this.createForm();
   }
 
-  changeType() {
-    this.type = !this.type;
+  private createForm() {
+    this.cadastro = new FormGroup({
+      email: new FormControl(''),
+      cpf: new FormControl(''),
+      telefone: new FormControl(''),
+      cep: new FormControl(''),
+      senha: new FormControl('')
+
+    })
   }
 
-  cadastroUsuario(){
+  cadastroUsuario() {
     console.log("Cadastro: " + this.cadastro);
-    return this.http.post<Usuario>('../../assets/database/db-usuario.json', this.cadastro);
+
+    this.ps.submitForm(this.cadastro.value)
+      .subscribe((data: any) => {
+        console.log('Form sumbmetido!');
+      },
+        (error: HttpErrorResponse) => {
+          console.log('Form error!')
+        });
+
   }
 
 }
+
+/*
+return this.http.post<Usuario>('../../assets/database/db-usuario.json', cadastroUsuario).toPromise().then((data : any) => {
+      console.log(data);
+      this.json = JSON.stringify(data.json);
+    });
+*/
